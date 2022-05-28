@@ -1,0 +1,57 @@
+{% extends 'dashboard/index.html' %}
+{% block content %}
+
+<div class="card-content table-responsive table-full-width">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ID</td>
+                <td>{{ product.id }}</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>{{ product.name }}</td>
+            </tr>
+            <tr>
+                <td>Color</td>
+                <td>{{ product.color }}</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>{{ product.price }}</td>
+            </tr>
+            <tr>
+                <td>Image</td>
+                <td>http://127.0.0.1:8000{{ product.img.url }}</td>
+            </tr>
+            <tr>
+                <td>Category</td>
+                <td>{{ product.ctg.name }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <img src="{{ product.img.url }}" alt=""><br><br><br>
+
+    <a href="{% url 'dashboard_product_list' %}">
+        <button class="btn btn-success btn-wd">
+        List
+    </button>
+    </a>
+    <a href="{% url 'dashboard_product_edit' pk=product.id %}">
+    <button class="btn btn-default btn-wd">Edit</button>
+    </a>
+    <a href="{% url 'dashboard_product_delete' pk=product.id %}">
+    <button type="button" class="btn btn-wd btn-danger">
+           Delete
+       </button>
+    </a>
+</div>
+
+
+{% endblock %}

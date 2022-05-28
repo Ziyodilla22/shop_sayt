@@ -1,0 +1,265 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title%} Shop {% endblock %}
+
+{% block content %}
+
+
+	<div class="main-container">
+		
+		<main>
+			<!-- Page Banner -->
+			<div class="page-banner container-fluid no-padding">
+				<!-- Container -->
+				<div class="container">
+					<div class="banner-content">
+						<h3>Shop</h3>
+						<p>our vision is to be Earth's most customer centric company</p>
+					</div>
+					<ol class="breadcrumb">
+						<li><a href="index.html" title="Home">Home</a></li>							
+						<li class="active">Shop</li>
+					</ol>
+				</div><!-- Container /- -->
+			</div><!-- Page Banner /- -->
+			
+			<!-- Product Section2 -->
+			<div class="product-section product-section1 product-section2 container-fluid no-padding">
+				<!-- Container -->
+				<div class="container">
+					<div class="row">
+						<!-- Widget Area -->
+						<div class="col-md-4 col-sm-4 col-xs-12 widget-area no-right-padding">
+							<!-- Widget Search -->
+							<aside class="widget widget_search">
+								<h3 class="widget-title">Search</h3>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search You Wants. . .">
+									<span class="input-group-btn">
+										<button class="btn btn-search" title="Search" type="button"><i class="icon icon-Search"></i></button>
+									</span>
+								</div>
+							</aside><!-- Widget Search /- -->
+							<!-- Widget Categories -->
+							<aside class="widget widget_categories">
+								<h3 class="widget-title">Categories</h3>
+								<ul>
+									<li><a href="#" title="Beautiful Chairs">Beautiful Chairs <span>(5)</span></a></li>
+									<li><a href="#" title="Creative Designs">Creative Designs <span>(6)</span></a></li>
+									<li><a href="#" title="Trendy Products">Trendy Products <span>(4)</span></a></li>
+									<li><a href="#" title="Interior Products">Interior Products <span>(2)</span></a></li>
+									<li><a href="#" title="Popular Products">Popular Products <span>(8)</span></a></li>
+									<li><a href="#" title="Casual Shirts">Casual Shirts <span>(7)</span></a></li>
+								</ul>
+							</aside><!-- Widget Categories /-  -->
+							<!-- Widget Price -->
+							<aside class="widget widget_price_filter">
+								<h3 class="widget-title">filter by price</h3>
+								<div class="price-filter">
+									<div id="slider-range"></div>
+									<div class="price-input">									
+										<span id="amount"></span>
+										<span id="amount2"></span>
+									</div>
+									<a href="#" title="filter">Filter</a>
+								</div>
+							</aside><!-- Widget Price /- -->
+							<!-- Widget Latest Post -->
+							<aside class="widget widget_latest_post">
+								<h3 class="widget-title">recent posts</h3>
+								<div class="latest-box">
+									<div class="post-box">
+										<a href="#"><img src="images/latest-post-1.jpg' %}" alt="Post"></a>
+										<h5><a href="#" title="need max shop.">I Phone 6s sales on</a></h5>
+										<div class="star-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<span class="price"><del>$955</del>$789</span>
+									</div>
+								</div>
+								<div class="latest-box">
+									<div class="post-box">
+										<a href="#"><img src="{% static 'images/latest-post-2.jpg' %}" alt="Post"></a>
+										<h5><a href="#" title="need max shop.">mens casual footwear</a></h5>
+										<div class="star-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<span class="price"><del>$185</del>$120</span>
+									</div>
+								</div>
+								<div class="latest-box">
+									<div class="post-box">
+										<a href="#"><img src="{% static 'images/latest-post-3.jpg' %}" alt="Post"></a>
+										<h5><a href="#" title="need max shop.">running shoes</a></h5>
+										<div class="star-rating">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</div>
+										<span class="price"><del>$150</del>$85</span>
+									</div>
+								</div>
+							</aside><!-- Widget Latest Post /- -->
+							<!-- Widget Tags -->
+							<aside class="widget widget_tags">
+								<h3 class="widget-title">popular tags</h3>
+								<div class="tags-box">
+									<a href="#" title="Chairs">Chairs</a>
+									<a href="#" title="Modern Designs">Modern Designs</a>
+									<a href="#" title="Watches">Watches</a>
+									<a href="#" title="Future">Future</a>
+									<a href="#" title="Popular Products">Popular Products</a>
+									<a href="#" title="Trendy">Trendy</a>
+									<a href="#" title="Interier">Interier</a>
+									<a href="#" title="Modern">Modern</a>
+								</div>
+							</aside><!-- Widget Tags -->
+						</div><!-- Widget Area /- -->
+						
+						<!-- Content Area -->
+						<div class="col-md-8 col-sm-7 col-xs-12 content-area product-section2 no-left-padding">
+							<!-- Products -->
+							<ul class="products">
+								<!-- Product -->
+								<li class="product">
+									<a href="#">
+										<img src="{% static 'images/product-10.jpg' %}" alt="Product" />
+										<h5>Stylish Chair</h5>
+										<span class="price"><del>$200</del>$139</span>
+									</a>
+									<a href="#" class="add-to-cart1" title="Add To Cart">Add To Cart</a>
+									<div class="wishlist-box">
+										<a href="#"><i class="fa fa-arrows-alt"></i></a>
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-search"></i></a>
+									</div>
+									
+								</li><!-- Product /- -->
+								<!-- Product -->
+								<li class="product">
+									<a href="#">
+										<img src="{% static 'images/product-11.jpg' %}" alt="Product" />
+										<h5>men's casual shoes</h5>
+										<span class="price"><del>$200</del>$119</span>
+									</a>
+									<a href="#" class="add-to-cart1" title="Add To Cart">Add To Cart</a>
+									<div class="wishlist-box">
+										<a href="#"><i class="fa fa-arrows-alt"></i></a>
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-search"></i></a>
+									</div>
+								</li><!-- Product /- -->
+								<!-- Product -->
+								<li class="product">
+									<a href="#">
+										<img src="{% static 'images/product-12.jpg' %}" alt="Product" />
+										<h5>sun glass</h5>
+										<span class="price"><del>$150</del>$85</span>
+									</a>
+									<a href="#" class="add-to-cart1" title="Add To Cart">Add To Cart</a>
+									<div class="wishlist-box">
+										<a href="#"><i class="fa fa-arrows-alt"></i></a>
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-search"></i></a>
+									</div>
+								</li><!-- Product /- -->
+								<!-- Product -->
+								<li class="product">
+									<a href="#">
+										<img src="{% static 'images/product-13.jpg' %}" alt="Product" />
+										<h5>Stylish Chair</h5>
+										<span class="price"><del>$380</del>$259</span>
+									</a>
+									<a href="#" class="add-to-cart1" title="Add To Cart">Add To Cart</a>
+									<div class="wishlist-box">
+										<a href="#"><i class="fa fa-arrows-alt"></i></a>
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-search"></i></a>
+									</div>
+								</li><!-- Product /- -->
+								<!-- Product -->
+								<li class="product">
+									<a href="#">
+										<img src="{% static 'images/product-14.jpg' %}" alt="Product" />
+										<h5>latest headphone</h5>
+										<span class="price"><del>$900</del>$759</span>
+									</a>
+									<a href="#" class="add-to-cart1" title="Add To Cart">Add To Cart</a>
+									<div class="wishlist-box">
+										<a href="#"><i class="fa fa-arrows-alt"></i></a>
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-search"></i></a>
+									</div>
+								</li><!-- Product /- -->
+								<!-- Product -->
+								<li class="product">
+									<a href="#">
+										<img src="{% static 'images/product-15.jpg' %}" alt="Product" />
+										<h5>men's jackets</h5>
+										<span class="price"><del>$350</del>$249</span>
+									</a>
+									<a href="#" class="add-to-cart1" title="Add To Cart">Add To Cart</a>
+									<div class="wishlist-box">
+										<a href="#"><i class="fa fa-arrows-alt"></i></a>
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-search"></i></a>
+									</div>
+								</li><!-- Product /- -->
+								<!-- Product -->
+								<li class="product">
+									<a href="#">
+										<img src="{% static 'images/product-16.jpg' %}" alt="Product" />
+										<h5>Model x12 computer</h5>
+										<span class="price"><del>$255</del>$139</span>
+									</a>
+									<a href="#" class="add-to-cart1" title="Add To Cart">Add To Cart</a>
+									<div class="wishlist-box">
+										<a href="#"><i class="fa fa-arrows-alt"></i></a>
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-search"></i></a>
+									</div>
+								</li><!-- Product /- -->
+								<!-- Product -->
+							<li class="product">
+								<a href="#">
+									<img src="{% static 'images/product-17.jpg' %}" alt="Product" />
+									<h5>Stylish headset</h5>
+									<span class="price"><del>$85</del>$39</span>
+								</a>
+								<a href="#" class="add-to-cart1" title="Add To Cart">Add To Cart</a>
+								<div class="wishlist-box">
+									<a href="#"><i class="fa fa-arrows-alt"></i></a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-search"></i></a>
+								</div>
+							</li><!-- Product /- -->
+							</ul><!-- Products /- -->
+						</div><!-- Content Area /- -->
+					</div><!-- Row /- -->
+					<nav class="ow-pagination">
+						<ul class="pager">
+							<li class="number"><a href="#">4</a></li>
+							<li class="load-more"><a href="#">Load More</a></li>
+							<li class="previous"><a href="#"><i class="fa fa-angle-right"></i></a></li>
+							<li class="next"><a href="#"><i class="fa fa-angle-left"></i></a></li>
+						</ul>
+					</nav>
+				</div><!-- Container /- -->
+			</div><!-- Product Section2 /- -->
+		</main>
+
+
+	</div>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'dashboard/index.html' %}
+{% block content %}
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success btn-wd">Save</button>
+
+    <a href="{% url 'dashboard_category_list' %}"><button type="button" class="btn btn-wd btn-default btn-move-left">
+        Back
+    </button>
+    </a>
+</form>
+{% endblock %}
